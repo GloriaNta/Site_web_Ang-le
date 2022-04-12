@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw; 
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* =========================================  HEADER  =========================================== */
+header{
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== NAV ===== */
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+}
+
+ul.nav{
+    margin-left: 450px;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+li a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover{
+    color: #FB625D;
+}
+
+.logo{
+    width: 80%;
+}
+
+
+h1{
+    font-size: 9rem;
+    font-weight: bold;
+    color: white;
+    width: 10px;
+    text-align: center;
+    margin-left: 15%;
+}
+
+/* ===== VIDEO ===== */
+
+.nav-video{
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw; 
+    height: 100vh;
+}
+
+.back-video{
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* =========================================  MAIN  =========================================== */
+
+main{
+    background-image: url(src/img/fond-fleur_nonante_tour.png);
+}
+
+#container{
+    margin-left: 40px;
+    margin-top: 300px;
+}
+
+h2{
+    color: #FB625D;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #FB625D;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button a:hover, button:hover{
+    background-color: #FFFFFF;
+    color: #FB625D;
+}
+
+button:hover{
+    border: 1px solid #FB625D;
+    color: #FB625D;
+}
+
+/* =========================================  FOOTER  =========================================== */
+
+footer{
+    background: linear-gradient(to right top, #FB625D, #FFCAC8);
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-footer{
+    width: 100px;
+    margin: 20px;
+}
+
+.newsletter{
+    color: white;
+    width: 100%;
+    font-size: 17px;
+}
+
+.form-control{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+.footer{
+    background-color: none;
+    border: 1px solid white;
+    margin-top: 10px;
+    width: 120px;
+    height: 35px;
+}
